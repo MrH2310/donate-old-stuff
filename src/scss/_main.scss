@@ -1,3 +1,11 @@
+@import "./reset";
+@import "./settings/fonts";
+@import "./settings/colors";
+
+@import "./home";
+@import "./userForm";
+
 body {
-  background-color: red;
+  font-family: $font-base;
+  background-color: $color-background;
 }
