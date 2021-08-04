@@ -4,13 +4,13 @@ import HomeHeader from "./HomeHeader";
 
 const Register = () => {
 
-    return(
+    return (
         <>
-        <HomeHeader/>
-        <div className='user-form'>
+            <HomeHeader/>
+            <div className='user-form'>
                 <h1>Register</h1>
                 <p>Work in progress...</p>
-        </div>
+            </div>
         </>
     )
 };

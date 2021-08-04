@@ -1,8 +1,7 @@
-import React from "react";
 import {Link} from "react-router-dom";
 
 const HomeHeader = () => {
-    return(<>
+    return(<div className="header-banner">
         <div className="user-bar">
             <Link to='/login'><button>Zaloguj</button></Link>
             <Link to='/register'><button>Załóż konto</button></Link>
@@ -14,8 +13,9 @@ const HomeHeader = () => {
             <li>Fundacja i organizacje</li>
             <li>Kontakt</li>
         </ul>
-        </>
+        </div>
     )
 };
 
 export default HomeHeader;
+
