@@ -1,8 +1,9 @@
-import {Link} from "react-router-dom";
+import {Link} from 'react-router-dom';
 
 const HomeHeader = () => {
-    return(<div className="header-banner">
-        <div className="user-bar">
+    return (
+    <div className='header-banner'>
+        <div className='user-bar'>
             <Link to='/login'><button>Zaloguj</button></Link>
             <Link to='/register'><button>Załóż konto</button></Link>
         </div>
@@ -13,7 +14,7 @@ const HomeHeader = () => {
             <li>Fundacja i organizacje</li>
             <li>Kontakt</li>
         </ul>
-        </div>
+    </div>
     )
 };
 

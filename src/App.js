@@ -11,17 +11,17 @@ import './scss/main.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
       <BrowserRouter>
-        <Switch>
-          <Route exact path ='/' component={Home}/>
-          <Route exact path ='/login' component={Login}/>
-          <Route exact path = '/register' component={Register}/>
-        </Switch>
+        <div className="App">
+          <header className="App-header">
+          <Switch>
+            <Route exact path ='/' component={Home}/>
+            <Route exact path ='/login' component={Login}/>
+            <Route exact path = '/register' component={Register}/>
+          </Switch>
+          </header>
+        </div>
       </BrowserRouter>
-      </header>
-    </div>
   );
 }
 
