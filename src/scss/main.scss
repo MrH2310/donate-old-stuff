@@ -2,9 +2,13 @@
 @import "./settings/fonts";
 @import "./settings/colors";
 
-@import "./home";
+@import "./homeHeader";
+@import "./homeWelcome";
 @import "./userForm";
 @import "./threeColumns";
+@import "./simpleSteps";
+@import "./aboutUs";
+@import "./contactUs";
 
 body {
   font-family: $font-base;
