@@ -16,7 +16,6 @@ const ThreeColumns = () => {
                 <h2>Zorganizowanych zbiórek</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisc Pallentesque vel enim a elit viverra elementuma. Aliquam erat voluptat.</p>
             </div>
-
         </div>
     )
 };

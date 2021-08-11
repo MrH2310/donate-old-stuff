@@ -1,0 +1,66 @@
+.who-to-help {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8rem 0;
+  text-align: center;
+
+  h1 {
+    font-size: 2vw;
+    margin-bottom: 1.5rem;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    font-size: 1.25vw;
+
+    li {
+      max-width: 10vw;
+      margin: 3rem 1rem;
+      padding: 1rem;
+      border: 1px solid black;
+
+      &:first-of-type {
+        padding: 1.8rem;
+      }
+    }
+  }
+
+  .org-description {
+    font-size: 1.2vw;
+    max-width: 35vw;
+  }
+
+  .org-lists {
+    font-family: $font-alt, sans-serif;
+    font-weight: 300;
+    margin: 2rem 0;
+    min-width: 65vw;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      align-content: space-between;
+      flex-wrap: wrap;
+      max-height: 12vh;
+      max-width: 65vw;
+      border-bottom: 1px solid black;
+
+      h3 {
+        font-size: 1.3vw;
+        margin-top: 2rem;
+      }
+
+      p {
+        font-size: 1vw;
+        margin-bottom: 1.3rem;
+
+        &:last-of-type {
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+}

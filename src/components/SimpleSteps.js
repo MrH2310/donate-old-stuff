@@ -8,7 +8,7 @@ import Icon4 from '../assets/Icon-4.svg';
 
 const SimpleSteps = () => {
     return (
-        <div className='donate_banner'>
+        <div className='donate_banner' id='what'>
             <h1>Wystarczą 4 proste kroki</h1>
             <img src ={Decoration} alt='Decoration'/>
             {/* TODO część z krokami zmienić na komponent i przekazać dane przez propsy */}

@@ -2,10 +2,12 @@ import  {
   BrowserRouter,
   Route,
   Switch,
-} from "react-router-dom";
-import Home from "./components/Home";
-import Login from "./components/Login";
-import Register from "./components/Register";
+} from 'react-router-dom';
+
+import Home from './components/Home';
+import Login from './components/Login';
+import Register from './components/Register';
+import Logout from './components/Logout';
 
 import './scss/main.scss';
 
@@ -17,7 +19,8 @@ function App() {
           <Switch>
             <Route exact path ='/' component={Home}/>
             <Route exact path ='/login' component={Login}/>
-            <Route exact path = '/register' component={Register}/>
+            <Route exact path ='/register' component={Register}/>
+            <Route exact path ='/logout' component={Logout}/> 
           </Switch>
           </header>
         </div>

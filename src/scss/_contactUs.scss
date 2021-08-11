@@ -1,6 +1,7 @@
 .contact-us {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 
   .contact-background {
     max-width: 49vw;
@@ -80,9 +81,26 @@
       font-family: $font-base, sans-serif;
       text-transform: uppercase;
       padding: 0.5rem 2rem;
-      margin-top: 2rem;
+      margin: 2rem 7rem 0 0;
       position: relative;
       left: 36%;
+    }
+
+    .socials {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      position: relative;
+      bottom: -35%;
+      right: 20%;
+
+      p {
+        min-width: 10vw;
+        margin-right: 33vw;
+      }
+      img {
+        margin-left: 1rem;
+      }
     }
   }
 }

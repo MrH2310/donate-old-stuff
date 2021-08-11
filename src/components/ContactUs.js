@@ -1,9 +1,11 @@
 import BackgroundContactForm from '../assets/Background-Contact-Form.jpg';
 import Decoration from '../assets/Decoration.svg';
+import Facebook from '../assets/Facebook.svg';
+import Instagram  from '../assets/Instagram.svg';
 
 const ContactUs = () => {
     return (
-        <div className='contact-us'>
+        <div className='contact-us' id='contact'>
             <div className='contact-background'>
                 <img src={BackgroundContactForm} alt='clothes'/>
             </div>
@@ -21,10 +23,20 @@ const ContactUs = () => {
                     </div>
                     <div>
                         <label>Wpisz swoją wiadomość</label>
-                        <textarea type='text' name='message' placeholder='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'></textarea>
+                        <textarea 
+                            type='submit' 
+                            name='message' 
+                            placeholder='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+                        />
                     </div>
                 </form>
                 <button>Wyślij</button>
+                <div className='socials'>
+                    <p>Copyright by Coders Lab</p>
+                    <img src={Facebook} alt='facebook'/>
+                    <img src={Instagram} alt='instagram'/>
+                </div>
             </div>
         </div>
     )
