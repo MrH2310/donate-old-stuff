@@ -1,7 +1,7 @@
 import {Link} from 'react-router-dom';
 
 import HomeHeader from "./HomeHeader";
-import Decoration from '../assets/Decoration.svg';
+import DecorationBanner from './DecorationBanner';
 
 const Register = () => {
     const lgtBorder = (e) => {
@@ -15,17 +15,16 @@ const Register = () => {
     return (
         <>
             <HomeHeader/>
-            <div className='user-form'>
-                <h1>Załóż konto</h1>
-                <img src={Decoration} alt ='decoration'/>
-                <div className='login-data'>
-                    <label>Email</label>
-                    <input type='email'/>
-                    <label>Hasło</label>
-                    <input type='password'/>
-                    <label>Powtórz hasło</label>
-                    <input type='password'/>
-                </div>
+            <div className='user-data'>
+                <DecorationBanner title={'Załóż konto'}/>
+                <form className='login-data'>
+                    <label htmlFor='email'>Email</label>
+                    <input id='email' type='email'/>
+                    <label htmlFor='password'>Hasło</label>
+                    <input id='password' type='password'/>
+                    <label htmlFor='repeat-password'>Powtórz hasło</label>
+                    <input id='repeat-password' type='password'/>
+                </form>
                 <div className ='btns'>
                     <Link to ='/login' onMouseEnter={lgtBorder} onMouseLeave={extBorder}>Zaloguj się</Link>
                     <Link to ='/register'onMouseEnter={lgtBorder} onMouseLeave={extBorder}>Załóż konto</Link>

@@ -2,36 +2,39 @@ import BackgroundContactForm from '../assets/Background-Contact-Form.jpg';
 import Decoration from '../assets/Decoration.svg';
 import Facebook from '../assets/Facebook.svg';
 import Instagram  from '../assets/Instagram.svg';
+import ContactForm from './ContactForm';
 
 const ContactUs = () => {
+    const API = 'https://fer-api.coderslab.pl/v1/portfolio';
+
+    const handleSubmit = (newForm) => {
+        fetch(`${API}/contact`, {
+            method: 'POST',
+            body: JSON.stringify(newForm),
+            headers: {
+                'Content-Type': 'application/json' 
+            }
+        })
+
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+        })
+
+        .catch(error => {
+            console.log(error);
+        });
+    }
+
     return (
         <div className='contact-us' id='contact'>
             <div className='contact-background'>
                 <img src={BackgroundContactForm} alt='clothes'/>
             </div>
-            <div className='contact-form'>
+            <div className='contact'>
                 <h1>Skontaktuj się z nami</h1>
                 <img src={Decoration} alt='decoration'/>
-                <form>
-                    <div>
-                        <label>Wpisz swoje imię</label>
-                        <input type='text' name='name' placeholder='Andrzej'></input>
-                    </div>
-                    <div>
-                        <label>Wpisz swój email</label>
-                        <input type='email' name='email' placeholder='abc@xyz.pl'></input>
-                    </div>
-                    <div>
-                        <label>Wpisz swoją wiadomość</label>
-                        <textarea 
-                            type='submit' 
-                            name='message' 
-                            placeholder='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-                        />
-                    </div>
-                </form>
-                <button>Wyślij</button>
+                <ContactForm submitContact={handleSubmit}/>
                 <div className='socials'>
                     <p>Copyright by Coders Lab</p>
                     <img src={Facebook} alt='facebook'/>

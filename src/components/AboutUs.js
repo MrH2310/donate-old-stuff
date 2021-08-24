@@ -1,13 +1,13 @@
 import Signature from '../assets/Signature.svg';
 import People from '../assets/People.jpg';
-import Decoration from '../assets/Decoration.svg';
+
+import DecorationBanner from './DecorationBanner';
 
 const AboutUs = () => {
     return (
         <div className='about-us' id='about'>
             <div className='explanation'>
-                <h1>O nas</h1>
-                <img src={Decoration} alt='decoration'/>
+                <DecorationBanner title={'O nas'}/>
                 <p>
                     Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. 
                     Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip
