@@ -10,13 +10,13 @@ const NavBar = () => {
     }
 
     return (
-        <ul className="nav-bar">
+        <div className="nav-bar">
             <Link to='welcome' smooth={true} duration={200} onMouseEnter={lgtBorder} onMouseLeave={extBorder}>Start</Link>
             <Link to='what' smooth={true} duration={400} onMouseEnter={lgtBorder} onMouseLeave={extBorder}>O co chodzi?</Link>
             <Link to='about' smooth={true} duration={600} onMouseEnter={lgtBorder} onMouseLeave={extBorder}>O nas</Link>
             <Link to='organisations' smooth={true} duration={800} onMouseEnter={lgtBorder} onMouseLeave={extBorder}>Fundacja i organizacje</Link>
             <Link to='contact' smooth={true} duration={1000} onMouseEnter={lgtBorder} onMouseLeave={extBorder}>Kontakt</Link>
-        </ul>
+        </div>
     )
 };
 

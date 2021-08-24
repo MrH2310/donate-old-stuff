@@ -1,16 +1,14 @@
 import {Link} from 'react-router-dom';
 
-import HomeHeader from './HomeHeader'
-
-import Decoration from '../assets/Decoration.svg';
+import HomeHeader from './HomeHeader';
+import DecorationBanner from './DecorationBanner';
 
 const Logout = () => {
     return (
         <>
             <HomeHeader/>
-            <div>
-                <h1>Wylogowanie nastąpiło pomyślnie!</h1>
-                <img src={Decoration} alt='decoration'/>
+            <div className='logout-view'>
+                <DecorationBanner title={'Wylogowanie nastąpiło pomyślnie!'}/>
                 <Link to='/'>Strona główna</Link>
             </div>
         </>

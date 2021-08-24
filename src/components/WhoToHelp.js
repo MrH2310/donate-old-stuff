@@ -1,10 +1,9 @@
-import Decoration from '../assets/Decoration.svg';
+import DecorationBanner from './DecorationBanner';
 
 const WhoToHelp = () => {
     return (
         <div className='who-to-help' id='organisations'>
-            <h1>Komu pomagamy?</h1>
-            <img src={Decoration} alt='decoration'/>
+            <DecorationBanner title={'Komu pomagamy?'}/>
             <ul>
                 <li>Fundacjom</li>
                 <li>Oragnizacjom pozarządowym</li>
@@ -30,21 +29,6 @@ const WhoToHelp = () => {
                     <p>Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.</p>
                     <p>ubrania, jedzenie, ciepłe koce</p>
                 </div>
-                {/* <div>
-                    <h3>Fundacja “Bez domu”</h3>
-                    <p>Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.</p>
-                    <p>ubrania, jedzenie, ciepłe koce</p>
-                </div>
-                <div>
-                    <h3>Fundacja “Bez domu”</h3>
-                    <p>Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.</p>
-                    <p>ubrania, jedzenie, ciepłe koce</p>
-                </div>
-                <div>
-                    <h3>Fundacja “Bez domu”</h3>
-                    <p>Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.</p>
-                    <p>ubrania, jedzenie, ciepłe koce</p>
-                </div> */}
             </div>
         </div>
     )

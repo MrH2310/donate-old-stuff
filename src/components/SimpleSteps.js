@@ -1,6 +1,7 @@
 import {Link} from "react-router-dom";
 
-import Decoration from "../assets/Decoration.svg";
+import DecorationBanner from "./DecorationBanner";
+
 import Icon1 from '../assets/Icon-1.svg';
 import Icon2 from '../assets/Icon-2.svg';
 import Icon3 from '../assets/Icon-3.svg';
@@ -9,9 +10,7 @@ import Icon4 from '../assets/Icon-4.svg';
 const SimpleSteps = () => {
     return (
         <div className='donate_banner' id='what'>
-            <h1>Wystarczą 4 proste kroki</h1>
-            <img src ={Decoration} alt='Decoration'/>
-            {/* TODO część z krokami zmienić na komponent i przekazać dane przez propsy */}
+            <DecorationBanner title={'Wystarczą 4 proste kroki'}/>
             <div className='steps'>
                 <div>
                     <img src ={Icon1} alt='Choose things to donate'/>
