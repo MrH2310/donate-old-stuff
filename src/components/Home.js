@@ -1,4 +1,4 @@
-import HomeHeader from  './HomeHeader';
+import HomeHeader from  './header/HomeHeader';
 import HomeWelcome from './HomeWelcome';
 import ThreeColumns from './ThreeColumns';
 import SimpleSteps from "./SimpleSteps";

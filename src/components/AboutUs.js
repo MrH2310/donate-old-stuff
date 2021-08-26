@@ -7,7 +7,7 @@ const AboutUs = () => {
     return (
         <div className='about-us' id='about'>
             <div className='explanation'>
-                <DecorationBanner title={'O nas'}/>
+                <DecorationBanner title='O nas'/>
                 <p>
                     Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. 
                     Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip

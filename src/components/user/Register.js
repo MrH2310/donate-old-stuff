@@ -1,7 +1,7 @@
 import {Link} from 'react-router-dom';
 
-import HomeHeader from "./HomeHeader";
-import DecorationBanner from './DecorationBanner';
+import HomeHeader from  '../header/HomeHeader';
+import DecorationBanner from '../DecorationBanner';
 
 const Register = () => {
     const lgtBorder = (e) => {
@@ -16,7 +16,7 @@ const Register = () => {
         <>
             <HomeHeader/>
             <div className='user-data'>
-                <DecorationBanner title={'Załóż konto'}/>
+                <DecorationBanner title='Załóż konto'/>
                 <form className='login-data'>
                     <label htmlFor='email'>Email</label>
                     <input id='email' type='email'/>

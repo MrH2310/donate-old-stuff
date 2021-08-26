@@ -26,6 +26,10 @@ const ContactForm = ({submitContact}) => {
         infoMessage = 'Wiadomość musi mieć co najmniej 120 znaków!';
     };
 
+    const errorStyle = {
+        color: 'red',
+    };
+
     const handleChange = (e) => {
         e.preventDefault();
         submitContact({
@@ -33,10 +37,6 @@ const ContactForm = ({submitContact}) => {
             email: email,
             message: message,
         })
-    };
-
-    const errorStyle = {
-        color: 'red',
     };
 
     return (
