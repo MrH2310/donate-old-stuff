@@ -1,8 +1,9 @@
 import BackgroundContactForm from '../assets/Background-Contact-Form.jpg';
-import Decoration from '../assets/Decoration.svg';
 import Facebook from '../assets/Facebook.svg';
 import Instagram  from '../assets/Instagram.svg';
+
 import ContactForm from './ContactForm';
+import DecorationBanner from './DecorationBanner';
 
 const ContactUs = () => {
     const API = 'https://fer-api.coderslab.pl/v1/portfolio';
@@ -32,8 +33,7 @@ const ContactUs = () => {
                 <img src={BackgroundContactForm} alt='clothes'/>
             </div>
             <div className='contact'>
-                <h1>Skontaktuj się z nami</h1>
-                <img src={Decoration} alt='decoration'/>
+                <DecorationBanner title='Skontaktuj się z nami'/>
                 <ContactForm submitContact={handleSubmit}/>
                 <div className='socials'>
                     <p>Copyright by Coders Lab</p>

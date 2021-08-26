@@ -10,7 +10,7 @@ import Icon4 from '../assets/Icon-4.svg';
 const SimpleSteps = () => {
     return (
         <div className='donate_banner' id='what'>
-            <DecorationBanner title={'Wystarczą 4 proste kroki'}/>
+            <DecorationBanner title='Wystarczą 4 proste kroki'/>
             <div className='steps'>
                 <div>
                     <img src ={Icon1} alt='Choose things to donate'/>

@@ -3,7 +3,7 @@ import DecorationBanner from './DecorationBanner';
 const WhoToHelp = () => {
     return (
         <div className='who-to-help' id='organisations'>
-            <DecorationBanner title={'Komu pomagamy?'}/>
+            <DecorationBanner title='Komu pomagamy?'/>
             <ul>
                 <li>Fundacjom</li>
                 <li>Oragnizacjom pozarządowym</li>

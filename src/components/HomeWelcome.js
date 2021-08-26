@@ -10,8 +10,8 @@ const HomeWelcome = () => {
             <img src={HomeHeroImage} alt='Old stuff near paper box'/>
             <div className='title' >
                 <DecorationBanner 
-                title={'Zacznij pomagać!'}
-                info={'Oddaj niechciane rzeczy w zaufane ręce'}
+                title='Zacznij pomagać!'
+                info='Oddaj niechciane rzeczy w zaufane ręce'
                 />
                 <div className='nav-btn'>
                     <Link to='/login'><button className='donate'>Oddaj rzeczy</button></Link>
